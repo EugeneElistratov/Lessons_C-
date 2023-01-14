@@ -14,9 +14,9 @@ int value1 = Convert.ToInt32(a);
 int value2 = Convert.ToInt32(b);
 if (value1 > value2)
 {
-   Console.WriteLine("max = " + value1); 
-} 
+    Console.WriteLine("max = " + value1);
+}
 else
 {
-   Console.WriteLine("max = " + value2);  
+    Console.WriteLine("max = " + value2);
 }
