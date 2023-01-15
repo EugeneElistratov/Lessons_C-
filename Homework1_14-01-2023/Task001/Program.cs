@@ -7,10 +7,10 @@ a = -9 b = -3 -> max = -3
 */
 
 Console.Write("Введите число а = ");
-string a = Console.ReadLine();
+string a = Console.ReadLine();  // считывает с консоли строку ввода а= 
 Console.Write("Введите число b = ");
-string b = Console.ReadLine();
-int value1 = Convert.ToInt32(a);
+string b = Console.ReadLine(); // считывает с консоли строку ввода b=
+int value1 = Convert.ToInt32(a); // преобразует число в эквивалентное 32-битовое целое число со знаком
 int value2 = Convert.ToInt32(b);
 if (value1 > value2)
 {
