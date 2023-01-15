@@ -7,11 +7,10 @@
 */
 
 Console.Write("Введите любое целое число для проверки чётности   ->  ");
-string? a = Console.ReadLine();
-int value = Convert.ToInt32(a);
-int result = value / 2;
-if (result % 2 == 0)
+
+int a = Convert.ToInt32(Console.ReadLine());
+if (a % 2 != 0)
 {
-    Console.WriteLine("Данное число чётное");
+    Console.WriteLine("Данное число нечётное.");
 }
-else Console.WriteLine("Данное число нечётное");
+else Console.WriteLine("Данное число чётное.");
