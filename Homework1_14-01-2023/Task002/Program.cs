@@ -18,13 +18,13 @@ int value2 = Convert.ToInt32(b);
 int value3 = Convert.ToInt32(c);
 if ((value1 > value2) & (value1 > value3))
 {
-    Console.WriteLine("max = " + value1);
+Console.WriteLine("Максимальное из трёх чисел будет: max = " + value1);
 }
 else if ((value2 > value1) & (value2 > value3))
 {
-    Console.WriteLine("max = " + value2);
+    Console.WriteLine("Максимальное из трёх чисел будет: max = " + value2);
 }
 else if ((value3 > value1) & (value3 > value2))
 {
-    Console.WriteLine("max = " + value3);
+    Console.WriteLine("Максимальное из трёх чисел будет: max = " + value3);
 }
