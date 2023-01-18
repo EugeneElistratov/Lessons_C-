@@ -13,7 +13,7 @@ int InputTnt(string message)
     return x;
 }
 int a = InputTnt("Введите трёхзначное число");
-if (a > 00 && a < 1000)
+if (a > 99 && a < 1000)
 {
     int result = a % 10;
     int second = ((a - result) / 10) % 10;
