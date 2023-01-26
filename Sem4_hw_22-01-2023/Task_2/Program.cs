@@ -1,5 +1,8 @@
 ﻿// Задача 2: Напишите программу, которая принимает на вход число 
 // и выдаёт сумму цифр в числе. Реализовать через функции.
+// 452 -> 11
+// 82 -> 10
+// 9012 -> 12
 
 Console.Clear();
 
@@ -11,13 +14,15 @@ int Prompt(string message)
 }
 int Sum(int n)
 {
-    int Prod = 0;
-    for (int i = 1; i <= n; i++)
+    int Sum = 0;
+    while (n > 0)
     {
-        Prod = Prod + i;
+        int lastDigit = n % 10; // находим последнюю цифру по очереди до первой
+        Sum = Sum + lastDigit; // находим cумму последних цифр (можно Sum += lastDigit)
+        n = n / 10; // уменьшаем разрядность числа на единицу (можно n /= 10) 
     }
-    return Prod;
+    return Sum;
 }
 int n = Prompt("Введите число N ");
 int sum = Sum(n);
-System.Console.WriteLine($"Сумма цифр в числе {n}  =  {sum}");
+Console.WriteLine($"Сумма цифр в числе {n}  =  {sum}");
