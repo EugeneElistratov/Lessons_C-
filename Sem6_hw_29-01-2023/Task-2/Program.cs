@@ -21,7 +21,7 @@ else
 {
     double CrossPointX = ((b2 - b1) / (k1 - k2));
     double x = CrossPointX;
-    double CrossPointY = k1 * CrossPointX + b1;
+    double CrossPointY = k1 * x + b1;
     double y = CrossPointY;
-    System.Console.WriteLine($"{x:f1}, {y:f1} -> Точка пересечения двух прямых");
+    Console.WriteLine($"({x:f1}, {y:f1}) -> Точка пересечения двух прямых.");
 }
