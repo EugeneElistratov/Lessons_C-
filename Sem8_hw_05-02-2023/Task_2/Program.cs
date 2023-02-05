@@ -56,7 +56,6 @@ int FindIndexMinSumOfRows(int[] arr)
 int[,] massiv = new int[2, 3];
 FillArray(massiv);
 PrintArray(massiv);
-//PrintMatrix(RectangularMatrix);
 int[] sumOfRows = FindRowSum(massiv);
 int minIndex = FindIndexMinSumOfRows(sumOfRows);
 Console.WriteLine($"Наименьшая сумма элементов в: {minIndex} строке");
