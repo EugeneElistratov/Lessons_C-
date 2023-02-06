@@ -2,7 +2,7 @@
 // которая будет находить произведение двух матриц.
 
 
-void FillArrayI(int[,] arr)
+void FillArray(int[,] arr)
 {
     for (int i = 0; i < arr.GetLength(0); i++)
     {
@@ -13,7 +13,7 @@ void FillArrayI(int[,] arr)
     }
 }
 
-void PrintArrayI(int[,] arr)
+void PrintArray(int[,] arr)
 {
     for (int i = 0; i < arr.GetLength(0); i++)
     {
@@ -55,12 +55,12 @@ void Print(int[,] arr)
 }
 
 int[,] massivI = new int[3, 2]; // Матрица I -> 3стр. и 2 кол.
-FillArrayI(massivI);
-PrintArrayI(massivI);
+FillArray(massivI);
+PrintArray(massivI);
 Console.WriteLine();
 int[,] massivII = new int[2, 3]; // Матрица II -> 2стр. и 3 кол.
-FillArrayI(massivII);
-PrintArrayI(massivII);
+FillArray(massivII);
+PrintArray(massivII);
 System.Console.WriteLine("\nМатрица III = I * II");
 int[,] arr = Multiplication(massivI, massivII);
 Print(arr);
