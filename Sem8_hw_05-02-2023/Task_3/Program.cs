@@ -54,11 +54,11 @@ void Print(int[,] arr)
     }
 }
 
-int[,] massivI = new int[3, 2];
+int[,] massivI = new int[3, 2]; // Матрица I -> 3стр. и 2 кол.
 FillArrayI(massivI);
 PrintArrayI(massivI);
 Console.WriteLine();
-int[,] massivII = new int[2, 3];
+int[,] massivII = new int[2, 3]; // Матрица II -> 2стр. и 3 кол.
 FillArrayI(massivII);
 PrintArrayI(massivII);
 System.Console.WriteLine("\nМатрица III = I * II");
