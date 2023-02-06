@@ -13,36 +13,13 @@ void FillArrayI(int[,] arr)
     }
 }
 
-void PrintArrayI(int[,] arrI)
+void PrintArrayI(int[,] arr)
 {
-    for (int i = 0; i < arrI.GetLength(0); i++)
+    for (int i = 0; i < arr.GetLength(0); i++)
     {
-        for (int j = 0; j < arrI.GetLength(1); j++)
+        for (int j = 0; j < arr.GetLength(1); j++)
         {
-            Console.Write($"{arrI[i, j]}\t");
-        }
-        Console.WriteLine();
-    }
-}
-
-void FillArrayII(int[,] arrI)
-{
-    for (int i = 0; i < arrI.GetLength(0); i++)
-    {
-        for (int j = 0; j < arrI.GetLength(1); j++)
-        {
-            arrI[i, j] = new Random().Next(0, 10);
-        }
-    }
-}
-
-void PrintArrayII(int[,] arrII)
-{
-    for (int i = 0; i < arrII.GetLength(0); i++)
-    {
-        for (int j = 0; j < arrII.GetLength(1); j++)
-        {
-            Console.Write($"{arrII[i, j]}\t");
+            Console.Write($"{arr[i, j]}\t");
         }
         Console.WriteLine();
     }
@@ -82,8 +59,8 @@ FillArrayI(massivI);
 PrintArrayI(massivI);
 Console.WriteLine();
 int[,] massivII = new int[2, 3];
-FillArrayII(massivII);
-PrintArrayII(massivII);
+FillArrayI(massivII);
+PrintArrayI(massivII);
 System.Console.WriteLine("\nМатрица III = I * II");
-int[,] arrIII = Multiplication(massivI, massivII);
-Print(arrIII);
+int[,] arr = Multiplication(massivI, massivII);
+Print(arr);
