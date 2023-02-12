@@ -16,10 +16,7 @@ int SumNatNumbers(int M, int N, int sum = 0)
         sum += M;
         return SumNatNumbers((M + 1), N, sum);
     }
-    else
-    {
-        return sum;
-    }
+    return sum;
 }
 
 int M = Promt("Введите M ");
